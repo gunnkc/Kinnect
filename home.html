@@ -7,6 +7,25 @@
     <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="styles.css">
     <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        #family-info, .question {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        .feed-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
         .feed-image {
             width: 100%;
             max-width: 300px;
@@ -17,14 +36,33 @@
         
         .feed-post {
             max-width: 300px;
-            margin: 0 auto 20px;
+            margin: 0 0 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav-item {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
         }
     </style>
 </head>
 <body>
     <div id="family-info">
-        <p>Family Name: <span id="display-family-name"></span></p>
-        <p>Welcome, <span id="display-user-name"></span></p>
+        <p>Family Name: <span id="display-family-name">Smith</span></p>
+        <p>Welcome, <span id="display-user-name">John</span></p>
     </div>
 
     <div class="question">
@@ -63,8 +101,5 @@
 
     <script src="scripts.js"></script>
     <script src="home.js"></script>
-
-
-
 </body>
 </html>
