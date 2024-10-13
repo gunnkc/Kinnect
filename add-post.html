@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Post</title>
+    <link rel="stylesheet" href="add-post.css">
+    <style>
+        .image-preview {
+            margin-top: 10px;
+            display: none;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Question of the Day!</h1>
+        <div class="question">
+            <h2>Favorite Memory 2017</h2>
+        </div>
+
+        <form class="response-form">
+            <label for="response">Response</label>
+            <textarea id="response" name="response" rows="4" cols="50" placeholder="Write your response..."></textarea>
+
+            <div class="file-upload">
+                <label for="file-upload" class="file-upload-label">Add File</label>
+                <input type="file" id="file-upload" name="file-upload" accept="image/*">
+            </div>
+
+            <img id="image-preview" class="image-preview" alt="Image preview">
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <!-- Move the script to the bottom of the body -->
+    <script src="scripts.js"></script>
+    <script src="add-post.js"></script>
+
+    <nav class="bottom-nav">
+        <a href="home.html" class="nav-item">Home</a>
+        <a href="add-post.html" class="nav-item">Add Post</a>
+        <a href="profile.html" class="nav-item">Profile</a>
+    </nav>
+</body>
+</html>

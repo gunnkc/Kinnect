@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <div class="profile-container">
+        <!-- Daily Update Section -->
+        <h1>DAILY UPDATE</h1>
+
+        <!-- Profile Picture Placeholder -->
+        <div class="profile-picture">
+            <img src="buzz.jpg" alt="Profile Picture">
+        </div>
+
+        <div id="name">
+          <p>Your Name: <span id="display-user-name"></span></p>
+        </div>
+
+        <!-- Date Section -->
+        <div class="date-section">
+            <h2>Sat, Oct 19, 2024</h2>
+        </div>
+
+        <!-- Star Rating Section -->
+        <div class="star-rating">
+            <span class="star" data-rating="1">&#9733;</span>
+            <span class="star" data-rating="2">&#9733;</span>
+            <span class="star" data-rating="3">&#9733;</span>
+            <span class="star" data-rating="4">&#9733;</span>
+            <span class="star" data-rating="5">&#9733;</span>
+        </div>
+
+        <!-- Status Section (Emoji Picker) -->
+        <div class="status-selection">
+            <label for="emoji-picker">Choose your status:</label>
+            <input type="text" id="emoji-picker" maxlength="2" placeholder="😀">
+            <div id="selected-emoji" class="selected-emoji">&#128512;</div> <!-- Display the chosen emoji -->
+        </div>
+
+        <!-- Family Section -->
+        <div class="family-label">
+          <h3><span id="display-family-name"></span> Family</h3>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <a href="home.html" class="nav-item">Home</a>
+        <a href="add-post.html" class="nav-item">Add Post</a>
+        <a href="profile.html" class="nav-item">Profile</a>
+    </nav>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to left, #add8e6, #ffffff); /* Light blue to white gradient */
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+.container-members {
+  width: 350px;
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.container-members h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.member:hover {
+  background-color: #f1f1f1;
+}
+
+.member img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.member .details {
+  width: 100%;
+  height: 30px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.footer .code {
+  font-weight: bold;
+  font-family: monospace;
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.footer img {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+
+
+
+.back-btn {
+  font-size: 22px;
+  background-color: #1a1b73;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transition for both scaling and color change */
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from anchor links */
+  display: inline-block;
+}
+
+.back-btn:hover {
+  transform: scale(1.1); /* Grow by 10% on hover */
+}
+
